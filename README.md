@@ -25,9 +25,16 @@ Available on:
   http://192.168.1.17:8080
   Hit CTRL-C to stop the server
 ```
+## open podcast from podcast client
 
-Then open, e.g. http://192.168.1.17:8080/podcast.xml from your client
+Then open, e.g. http://192.168.1.17:8080/podcast.xml from your client.
 
+For example on Apple Podcasts:
 
+![subscribe](./media/subscribe.png "subscribe to the podcast")
 
+![play](./media/play.png "play the podcast")
 
+## generalizing it
+
+is left as an exercise for the reader
