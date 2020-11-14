@@ -6,9 +6,16 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python mtk-rss.py  # generates podcast.xml
+Episode 407: pl/FD407.html
+Episode 406: pl/FD406.html
+Episode 405: pl/FD405.html
+...
+Episode 3: pl/FD003.html
+Episode 2: pl/FD002.html
+Episode 1: pl/FD001.html
 ```
 
-## serve podcas.xml from localhost
+## serve podcast.xml from localhost
 
 ```
 npm install http-server
@@ -33,8 +40,15 @@ For example on Apple Podcasts:
 
 ![subscribe](./media/subscribe.png "subscribe to the podcast")
 
-![play](./media/play.png "play the podcast")
+--
 
-## generalizing it
+And you can download and play the episode:
 
-is left as an exercise for the reader
+![play](./media/play.png "play the podcast episode")
+
+--
+
+And even see the show details:
+
+![details](./media/details.png "see episode details")
+
