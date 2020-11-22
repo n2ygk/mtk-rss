@@ -15,30 +15,20 @@ Episode 2: pl/FD002.html
 Episode 1: pl/FD001.html
 ```
 
-## serve podcast.xml from localhost
+## serve podcast.xml from localhost with basic auth
 
 ```
-npm install http-server
-http-server .
+./http_server_auth.py --username foo --password bar --bind 0.0.0.0 8080
+Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
 ```
 
-Looks something like this:
-
-```text
-http-server .
-Starting up http-server, serving .
-Available on:
-  http://127.0.0.1:8080
-  http://192.168.1.17:8080
-  Hit CTRL-C to stop the server
-```
 ## open podcast from podcast client
 
-Then open, e.g. http://192.168.1.17:8080/podcast.xml from your client.
+Then open, e.g. http://foo:bar@alan.home:8080/podcast.xml from your client.
 
 For example on Apple Podcasts:
 
-![subscribe](./media/subscribe.png "subscribe to the podcast")
+![subscribe](./media/subscribe.jpg "subscribe to the podcast")
 
 --
 
