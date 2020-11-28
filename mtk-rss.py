@@ -24,7 +24,7 @@ def add_episode(fg, match):
             if descr:
                 description.append(descr['text'])
             elif href:
-                file_url = 'https://fullduplexradio.us' + href['rel']
+                file_url = 'https://fullduplexradio.us' + href['rel'] if href['rel'].startswith('/') else href['rel']
                 break
 
         if file_url:
