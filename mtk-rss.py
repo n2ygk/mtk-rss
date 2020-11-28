@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import re
 import requests
+import socket
 from datetime import datetime
 from dateutil import tz
 from feedgen.feed import FeedGenerator
@@ -45,7 +46,9 @@ fg.podcast.itunes_category('Music', 'Podcasting')
 fg.title('Full Duplex Radio')
 fg.description("R&R play what they like, which is a lot. And they tell you about it.")
 fg.link(link={'href': fdr})
-fg.image('https://fullduplexradio.us/img/header2.png', title='Full Duplex Radio', link=fdr)
+myhost = socket.getfqdn("0.0.0.0")
+# TODO: make this configurable
+fg.image('https://foo:bar@{}:8080/FDR.jpg'.format(myhost), title='Full Duplex Radio', link=fdr)
 local_tz = tz.tzlocal()
 fg.lastBuildDate(datetime.now(tz=local_tz))
 fg.rss_str(pretty=True)

@@ -34,11 +34,11 @@ For example on Apple Podcasts:
 
 And you can download and play the episode:
 
-![play](./media/play.png "play the podcast episode")
+![play](./media/play.jpg "play the podcast episode")
 
 --
 
 And even see the show details:
 
-![details](./media/details.png "see episode details")
+![details](./media/details.jpg "see episode details")
 
